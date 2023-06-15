@@ -48,3 +48,54 @@ A collection of small tools for image processing.
 
 # 运行图形界面主循环
 # ...
+# AI_tools
+A collection of small tools for image processing.
+
+## Image Processing and Annotation Program
+
+This code is a simple graphical user interface program for image processing and annotation. It provides a user-friendly interface that allows users to conveniently manipulate images and annotation data.
+
+### Functionality
+
+1. **Image Preprocessing**: The `preprocess_image` function in the code is used to resize the image to the specified target resolution and perform padding to accommodate annotations of different sizes.
+2. **Annotation Point Processing**: The `preprocess_points` function scales and offsets the coordinates of the annotation points to fit the preprocessed image.
+3. **Drawing Annotations**: The `draw_annotations` function iterates through each image in the image folder and draws the annotations on the preprocessed image based on the corresponding annotation files.
+4. **Saving Results**: After the annotations are drawn, the results are saved as PNG images with transparency channels and corresponding label files for future use and analysis.
+
+### Usage Instructions
+
+1. **Select Image Folder**: Click the "Select Folder" button to choose the folder containing the image files.
+2. **Select Annotation Folder**: Click the "Select Folder" button to choose the folder containing the annotation files.
+3. **Select Storage Location**: Click the "Select Folder" button to choose the folder where the processed results will be saved.
+4. **Select Target Resolution**: Select the target resolution option using the radio buttons, either "512x512" or "512x768".
+5. **Start Processing**: Click the "Start Processing" button to initiate the image and annotation data processing, and save the results in the specified storage location.
+
+### Dependencies and Modules
+
+- numpy
+- cv2 (OpenCV)
+- os
+- json
+- tkinter
+- tkinter.filedialog
+
+### Code Structure
+
+```python
+# Import required libraries and modules
+# ...
+
+# Define helper functions
+# ...
+
+# Define main processing functions
+# ...
+
+# Define the entry point for processing
+# ...
+
+# Create the graphical user interface window
+# ...
+
+# Run the main loop of the graphical user interface
+# ...
